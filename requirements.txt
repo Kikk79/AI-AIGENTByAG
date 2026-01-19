@@ -1,0 +1,8 @@
+google-genai
+elevenlabs
+python-dotenv
+sounddevice
+soundfile
+numpy
+speechrecognition
+scipy

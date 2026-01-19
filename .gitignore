@@ -1,0 +1,5 @@
+.env
+__pycache__/
+*.pyc
+.tmp/
+brain/short_term.md
