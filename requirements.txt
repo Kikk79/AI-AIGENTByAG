@@ -6,3 +6,5 @@ soundfile
 numpy
 speechrecognition
 scipy
+Pillow
+pyperclip
