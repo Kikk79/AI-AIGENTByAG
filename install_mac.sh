@@ -18,10 +18,15 @@ else
     echo "[WARN] Homebrew not found. Ensure 'portaudio' is installed if you have audio issues."
 fi
 
-echo "[2/4] Upgrading pip..."
+
+echo "[2/5] Creating Virtual Environment..."
+python3 -m venv venv
+source venv/bin/activate
+
+echo "[3/5] Upgrading pip..."
 python3 -m pip install --upgrade pip
 
-echo "[3/4] Installing Python Dependencies..."
+echo "[4/5] Installing Python Dependencies..."
 pip install -r requirements.txt
 
 if [ $? -ne 0 ]; then

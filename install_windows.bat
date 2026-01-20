@@ -14,10 +14,15 @@ IF %ERRORLEVEL% NEQ 0 (
     exit /b
 )
 
-echo [1/3] Upgrading pip...
+
+echo [1/4] Creating Virtual Environment...
+python -m venv venv
+call venv\Scripts\activate.bat
+
+echo [2/4] Upgrading pip...
 python -m pip install --upgrade pip
 
-echo [2/3] Installing Dependencies...
+echo [3/4] Installing Dependencies...
 pip install -r requirements.txt
 
 IF %ERRORLEVEL% NEQ 0 (
