@@ -17,7 +17,7 @@ IF %ERRORLEVEL% NEQ 0 (
 
 echo [1/4] Creating Virtual Environment...
 python -m venv venv
-call venv\Scripts\activate.bat
+call venv\Scripts\activate.ps1
 
 echo [2/4] Upgrading pip...
 python -m pip install --upgrade pip
